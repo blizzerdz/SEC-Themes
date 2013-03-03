@@ -1,0 +1,39 @@
+<script type="x-engine/func" data-func="template" data-name="header"></script>
+
+<div id="page_profile">
+  <div class="gutter">
+    <div class="widget fg profile_info">
+      <div class="photo">
+        <script type="x-engine/func" data-func="member-photo"></script>
+      </div>
+      <div class="stats">
+        <script type="x-engine/func" data-func="member-name"></script>
+        <script type="x-engine/func" data-func="member-options"></script>
+        <script type="x-engine/func" data-func="member-about"></script>
+        <script type="x-engine/func" data-func="member-stats"></script>
+      </div>
+    </div>
+    <div class="widget fg widget_activity">
+      <h2>
+        <script type="x-engine/func" data-func="lang" data-key="Recent Activity"></script>
+      </h2>
+      <script type="x-engine/func" data-func="activity" data-items-per-page="5"></script>
+    </div>
+    <div class="widget fg widget_lists">
+      <h2>
+        <script type="x-engine/func" data-func="lang" data-key="Lists"></script>
+      </h2>
+      <script type="x-engine/func" data-func="member-lists" data-lists-max="10"></script>
+    </div>
+  </div>
+  <div class="main">
+    <div class="widget fg">
+      <h1>
+        <script type="x-engine/func" data-func="lang" data-key="Posts"></script>
+      </h1>
+      <script type="x-engine/func" data-func="feed" data-type="member"></script>
+    </div>
+  </div>
+</div>
+
+<script type="x-engine/func" data-func="template" data-name="footer"></script>
